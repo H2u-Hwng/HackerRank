@@ -2,9 +2,8 @@
 # Score: 10.0
 
 
-_ = input()
-m = set(input().split())
-_ = input()
-n = set(input().split())
-result = (m.difference(n)).union(n.difference(m))
-print("\n".join(sorted(result, key=int)))
+m = int(input())
+set_m = set(input().split())
+n = int(input())
+set_n = set(input().split())
+print('\n'.join(sorted(set_m ^ set_n, key = int)))
