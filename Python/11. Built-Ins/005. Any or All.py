@@ -2,8 +2,8 @@
 # Score: 20.0
 
 
-n,nums = int(input()), list(map(int, input().strip().split()))
+n = int(input()) 
 
-l = len(nums)
+nums = input().strip().split()
 
-print(all([i>0 for i in nums]) and any([str(nums[j])==str(nums[j-l])[::-1] for j in range(l)]))
+print(all([int(i)>0 for i in nums]) and any([j==j[::-1] for j in nums]))
