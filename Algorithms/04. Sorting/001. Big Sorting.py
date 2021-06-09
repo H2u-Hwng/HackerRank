@@ -2,10 +2,17 @@
 # Score: 20.0
 
 
+def bigSorting(unsorted):
+    unsorted.sort(key=int)
+    for s in unsorted:
+        print(s)
+
 n = int(input().strip())
+
 unsorted = []
+
 for _ in range(n):
     unsorted_item = input()
     unsorted.append(unsorted_item)
-for elem in sorted(unsorted, key=int):
-    print(elem)
+
+result = bigSorting(unsorted)
