@@ -1,4 +1,4 @@
-# Problem: https://www.hackerrank.com/challenges/java-string-reverse/problem
+// Problem: https://www.hackerrank.com/challenges/java-string-reverse/problem
 
 import java.io.*;
 import java.util.*;
